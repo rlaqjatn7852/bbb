@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>반응형/유동형 소스</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" media="(max-width:340px)" type="text/css" href="css/max340.css">
+		<link rel="stylesheet" media="(min-width:341px) and (max-width:600px)" type="text/css" href="css/max600.css">
+		<style>
+			* { margin:0; padding:0; }
+			li { list-style:none; }
+			#container { width:940px; margin:0 auto; padding:20px; border:1px solid #bcbcbc; }
+			#header { padding:20px; margin-bottom:20px; border:1px solid #bcbcbc; }
+			#visual { width:100%; margin-bottom:20px; height:350px; }
+			#visual img { width:940px; height:350px; }
+			#content { width:580px; padding:20px; margin-bottom:20px; float:left; border:1px solid #bcbcbc; }
+			#sidebar { width:260px; padding:20px; margin-bottom:20px; float:right; border:1px solid #bcbcbc; }
+			#sidebar li { padding-left:20px; }
+			#footer { clear:both; padding:20px; border:1px solid #bcbcbc; }
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			$(function(){
+				$(window).resize(function(){
+					var w = $(window).width();
+					var h = $(window).height();
+					$('body').css({width:w, height:h});
+				}).resize();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>반응형/유동형 Layout</h1>
+			</div>
+			<div id="visual"><img src="bg.jpg"></div>
+			<div id="content">
+				<h2>Content</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus.
+				</p>
+			</div>
+			<div id="sidebar">
+				<h2>Sidebar</h2>
+				<ul>
+					<li>Lorem</li>
+					<li>Ipsum</li>
+					<li>Dolor</li>
+				</ul>
+			</div>
+			<div id="footer">
+				<p>Copyright</p>
+			</div>
+		</div>
+	</body>
+</html>

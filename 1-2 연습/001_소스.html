@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<meta name="viewport"content="width=device-width, initial-scale=1.0"/>
+<title>~480, 481~800, 801~1023, 1024</title>
+<style>
+	* { margin:0; padding:0; }
+	#box_a { background:orange; }
+	#box_b { background:pink; }
+	#box_c { background:yellowgreen; }
+
+</style>
+</head>
+<script>
+	$(function(){
+			$(window).resize(function(){
+				var w = $(window).width();
+				var h = $(window).height();
+				console.log(w + "/ " + h);
+				$("div#wrap").css({ width:w, height:h });
+			}).resize();
+		});
+</script>
+<body>
+<div id="wrap">
+    <div id="box_a"></div>
+    <div id="box_b"></div>
+    <div id="box_c"></div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
